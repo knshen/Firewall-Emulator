@@ -36,10 +36,14 @@ There are two ways to get a dump file
 **tcpdump -w example.pcap**, and run **sh autoVisit.sh** in another terminal. You can configure your own URLs in autoVisit.sh
 
 ## How to run firewall emulator
-**make clean**
-**make**
-**./firewall p1 p2 p3**, where p1 is the dump file name, like "dump.pcap"; p2 is the max number of allowed TCP connections; p3 is the filtered dump file name, like "filter.pcap".    
-For example, ./firewall dump.pcap 10 filter.pcap
+**make clean**   
+**make**   
+**./firewall p1 p2 p3**,    
+where p1 is the dump file name, like "dump.pcap"; p2 is the max number of allowed TCP connections; p3 is the filtered dump file name, like "filter.pcap".    
+For example, ./firewall dump.pcap 10 filter.pcap    
+
+To read a pcap file, you can use **tcpdump -r filename.pcap**    
+
 
 
 
